@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+:root{
+    --primary-font: 'Open Sans', sans-serif;
+    --headline-font: 'Montserrat Alternates', sans-serif;
+
+    --primary: #0077b6;
+}
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box; 
+  font-size: 65.2%; 
+}
+
+html body{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+
+h1,h2,h3,h4,h5{
+    font-family: var(--headline-font);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 2rem auto;
+    text-align: center;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+h1{
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/*==============================================================================*/
+
+.organigram{
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-auto-rows: auto;
+    align-items: center;
+}
+
+.center{
+    border: 4px solid var(--primary);
+    min-height: 500px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center h2{
+    font-size: 2.5;
+    font-weight: 700;
+    background: gray;
+    width: 500px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.center .graphe{
+    display: flex;
+    column-gap: 20rem;
+    align-items: center;
+}
+
+.sec-1, .sec-2{
+    position: relative;
+}
+
+.sec-1 svg, .sec-2 svg{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sec-1 .link-arrow-1{
+    top: 5%;
+    left: -41%;
+    transform: translateX(0);
+}
+
+.sec-1 .link-arrow-2{
+    top: -12%;
+    left: 97.5%;
+    transform: translateX(0) rotate(-23deg);
+}
+
+.sec-1 .link-arrow-3{
+    top: 0;
+    left: 98.5%;
+    transform: translateX(0) rotate(-5deg);
+}
+
+.sec-1 .link-arrow-4{
+    top: 9.5%;
+    left: 98.5%;
+    transform: translateX(0) rotate(10deg);
+}
+
+.sec-1 .link-arrow-5{
+    top: 30%;
+    left: 98.5%;
+    transform: translateX(0) rotate(5deg);
+}
+
+.sec-1 .link-arrow-6{
+    top: 41%;
+    left: 96.5%;
+    transform: translateX(0) rotate(20deg);
+}
+
+.sec-1 .link-arrow-7{
+    top: 50%;
+    left: 93.5%;
+    transform: translateX(0) rotate(31deg); 
+}
+
+.sec-1 .link-arrow-8{
+    top: 58%;
+    left: 87%;
+    transform: translateX(0) rotate(39deg);
+}
+
+.sec-1 .link-arrow-9{
+    top: 67%;
+    left: 80%;
+    transform: translateX(0) rotate(46deg);
+}
+
+.sec-1 .ver-l-1{
+    top: 14.5%;
+}
+
+.sec-1 .ver-l-2{
+    top: 39.5%;
+}
+
+.sec-1 .ver-l-3{
+    top: 64.5%;
+}
+
+.sec-1 .ver-l-4{
+    top: 90%;
+}
+
+.sec-2 .ver-1{
+    top: 8%;
+}
+
+.sec-2 .ver-2{
+    top: 20.5%;
+}
+
+.sec-2 .ver-3{
+    top: 45.5%;
+}
+
+.sec-2 .ver-4{
+    top: 58%;
+}
+
+.sec-2 .ver-5{
+    top: 70.5%;
+}
+
+.sec-2 .ver-6{
+    top: 83%;
+}
+
+
+.sec-1 h3, .sec-2 p, .details p{
+    border: 2px solid black;
+    text-align: center;
+}
+
+.sec-1 h3{ 
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.sec-2 p{
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.lightgreen{
+    background: lightgreen;
+}
+
+.sec-1 .orange{
+    background: orange;
+    border-color: orange;
+}
+
+.center .graphe h3{
+    font-size: 1.6rem;
+}
+
+.center .graphe p{
+    font-size: 1.6rem;
+}
+
+.details{
+    position: relative;
+    width: 100%;
+    padding: 0 7rem;
+
+    display: flex;
+    column-gap: 3rem;
+}
+
+.details p{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    padding: 0 .5rem;
+}
+
+.details .details-right{
+    position: relative;
+}
+
+.details .details-right svg{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.details .details-right .detail-2{
+    top: 21%;
+}
+
+.details .details-right .detail-3{
+    top: 54%;
+}
+
+.details svg.detail-1{
+    position: absolute;
+    left: 22.2%;
+    top: 5%;
+}
+
+.details .details-left{
+    position: relative;
+}
+
+.details .details-left svg{
+    position: absolute;
+    left: 34.5%;
+    top: 5%;
+}
+
+.details .details-left p{
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+
+
+/*==============================================================================*/
+
+.left, .right{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.left h2, .right h2{
+    color: white;
+    padding: .7rem;
+    background: var(--primary);
+    height: 400px;
+    text-align: center;
+
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
